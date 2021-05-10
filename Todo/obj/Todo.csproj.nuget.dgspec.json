@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ricky\\Source\\Repos\\guagin\\TodoDotNet\\Todo\\Todo.csproj": {}
+    "C:\\Users\\ricky\\source\\repos\\guagin\\TodoDotNet\\Todo\\Todo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ricky\\Source\\Repos\\guagin\\TodoDotNet\\Todo\\Todo.csproj": {
+    "C:\\Users\\ricky\\source\\repos\\guagin\\TodoDotNet\\Todo\\Todo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ricky\\Source\\Repos\\guagin\\TodoDotNet\\Todo\\Todo.csproj",
+        "projectUniqueName": "C:\\Users\\ricky\\source\\repos\\guagin\\TodoDotNet\\Todo\\Todo.csproj",
         "projectName": "Todo",
-        "projectPath": "C:\\Users\\ricky\\Source\\Repos\\guagin\\TodoDotNet\\Todo\\Todo.csproj",
+        "projectPath": "C:\\Users\\ricky\\source\\repos\\guagin\\TodoDotNet\\Todo\\Todo.csproj",
         "packagesPath": "C:\\Users\\ricky\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ricky\\Source\\Repos\\guagin\\TodoDotNet\\Todo\\obj\\",
+        "outputPath": "C:\\Users\\ricky\\source\\repos\\guagin\\TodoDotNet\\Todo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
         ],
         "configFilePaths": [
           "C:\\Users\\ricky\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,15 +22,14 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net50"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netcoreapp5.0": {
             "projectReferences": {}
           }
         },
@@ -41,8 +40,17 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netcoreapp5.0": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.24, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

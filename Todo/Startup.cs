@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Todo.Model;
 
 namespace Todo
 {
@@ -25,7 +26,16 @@ namespace Todo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<IConnectionProvider>(new MySqlConnectionProvider()
+            {
+                HostName = "localhost",
+                Port=3306,
+                UserName="root",
+                Password="imRicky",
+                Database="Todo"
+            });
 
+            services.AddSingleton<TodoItemRepository, TodoItemRepository>();
             services.AddControllers();
         }
 
